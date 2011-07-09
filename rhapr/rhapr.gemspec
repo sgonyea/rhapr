@@ -11,9 +11,10 @@ Gem::Specification.new do |s|
   s.summary     = %q{Rhapr wraps around HAProxy}
   s.description = %q{Rhapr is a ruby lib that wraps around HAProxy, enabling you to sanely decomission a process.}
 
-  s.add_dependency 'yard', '~>0.6'
+  s.has_rdoc    = true
+  s.add_dependency 'yard'
 
-  s.add_development_dependency 'rspec', '~>2.4'
+  s.add_development_dependency 'rspec', '~>2.6'
 
   s.files         = `git ls-files`.split("\n")
   s.test_files    = `git ls-files -- {test,spec,features}/*`.split("\n")
